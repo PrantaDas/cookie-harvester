@@ -1,3 +1,13 @@
+/**
+ * Maps and filters cookies to create a consolidated object containing the cookie string and token.
+ *
+ * @param {Array} cookies - An array of cookie objects with properties like name, value, etc.
+ *
+ * @returns {Object} Returns an object with a consolidated cookie string and token.
+ *
+ * @throws {Object} Returns an empty object if no cookies are provided.
+ */
+
 export default function mapCookies(cookies) {
   if (!cookies.length > 0) return {};
 

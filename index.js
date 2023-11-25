@@ -9,6 +9,15 @@ puppeteer.use(StealthPlugin());
 const api = new Api('eeXrVwSMXPZ4pJpwStuNyiUa7XxGZRX9');
 
 
+/**
+ * Main function for authenticating multiple accounts and retrieving cookies for each account.
+ *
+ * @param {Array} accounts - An array of account objects containing accountId, email, and password.
+ *
+ * @returns {Object} Returns an object containing cookies mapped to each email address.
+ *
+ * @throws {Object} Returns an empty object if no accounts are provided or if an error occurs during the process.
+ */
 export default async function main(accounts) {
 
   if (!accounts.length > 0) return {};
